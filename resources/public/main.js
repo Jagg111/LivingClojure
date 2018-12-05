@@ -80731,28 +80731,25 @@ cheshire_cat.core.init = function cheshire_cat$core$init() {
     return function() {
       var f__6070__auto__ = function() {
         var switch__6018__auto__ = function(c__6069__auto__) {
-          return function(state_7763) {
-            var state_val_7764 = state_7763[1];
-            if (state_val_7764 === 1) {
-              var inst_7752 = cljs_http.client.get.call(null, "/cheshire-cat");
-              var state_7763__$1 = state_7763;
-              return cljs.core.async.impl.ioc_helpers.take_BANG_.call(null, state_7763__$1, 2, inst_7752);
+          return function(state_7806) {
+            var state_val_7807 = state_7806[1];
+            if (state_val_7807 === 1) {
+              var inst_7794 = cljs_http.client.get.call(null, "/cheshire-cat");
+              var state_7806__$1 = state_7806;
+              return cljs.core.async.impl.ioc_helpers.take_BANG_.call(null, state_7806__$1, 2, inst_7794);
             } else {
-              if (state_val_7764 === 2) {
-                var inst_7754 = state_7763[2];
-                var inst_7755 = (new cljs.core.Keyword(null, "body", "body", -2049205669)).cljs$core$IFn$_invoke$arity$1(inst_7754);
-                var inst_7756 = (new cljs.core.Keyword(null, "name", "name", 1843675177)).cljs$core$IFn$_invoke$arity$1(inst_7755);
-                var inst_7757 = enfocus.core.content.call(null, inst_7756);
-                var inst_7758 = enfocus.core.at.call(null, "#cat-name", inst_7757);
-                var inst_7759 = (new cljs.core.Keyword(null, "status", "status", -1997798413)).cljs$core$IFn$_invoke$arity$1(inst_7755);
-                var inst_7760 = enfocus.core.content.call(null, inst_7759);
-                var inst_7761 = enfocus.core.at.call(null, "#status", inst_7760);
-                var state_7763__$1 = function() {
-                  var statearr_7765 = state_7763;
-                  statearr_7765[7] = inst_7758;
-                  return statearr_7765;
-                }();
-                return cljs.core.async.impl.ioc_helpers.return_chan.call(null, state_7763__$1, inst_7761);
+              if (state_val_7807 === 2) {
+                var inst_7796 = state_7806[2];
+                var inst_7797 = (new cljs.core.Keyword(null, "body", "body", -2049205669)).cljs$core$IFn$_invoke$arity$1(inst_7796);
+                var inst_7798 = (new cljs.core.Keyword(null, "name", "name", 1843675177)).cljs$core$IFn$_invoke$arity$1(inst_7797);
+                var inst_7799 = enfocus.core.content.call(null, inst_7798);
+                var inst_7800 = (new cljs.core.Keyword(null, "status", "status", -1997798413)).cljs$core$IFn$_invoke$arity$1(inst_7797);
+                var inst_7801 = enfocus.core.content.call(null, inst_7800);
+                var inst_7802 = enfocus.core.set_style.call(null, new cljs.core.Keyword(null, "font-size", "font-size", -1847940346), "500%");
+                var inst_7803 = enfocus.core.do__GT_.call(null, inst_7801, inst_7802);
+                var inst_7804 = enfocus.core.at.call(null, "#cat-name", inst_7799, "#status", inst_7803);
+                var state_7806__$1 = state_7806;
+                return cljs.core.async.impl.ioc_helpers.return_chan.call(null, state_7806__$1, inst_7804);
               } else {
                 return null;
               }
@@ -80763,17 +80760,17 @@ cheshire_cat.core.init = function cheshire_cat$core$init() {
           return function() {
             var cheshire_cat$core$init_$_state_machine__6019__auto__ = null;
             var cheshire_cat$core$init_$_state_machine__6019__auto____0 = function() {
-              var statearr_7766 = [null, null, null, null, null, null, null, null];
-              statearr_7766[0] = cheshire_cat$core$init_$_state_machine__6019__auto__;
-              statearr_7766[1] = 1;
-              return statearr_7766;
+              var statearr_7808 = [null, null, null, null, null, null, null];
+              statearr_7808[0] = cheshire_cat$core$init_$_state_machine__6019__auto__;
+              statearr_7808[1] = 1;
+              return statearr_7808;
             };
-            var cheshire_cat$core$init_$_state_machine__6019__auto____1 = function(state_7763) {
+            var cheshire_cat$core$init_$_state_machine__6019__auto____1 = function(state_7806) {
               while (true) {
                 var ret_value__6020__auto__ = function() {
                   try {
                     while (true) {
-                      var result__6021__auto__ = switch__6018__auto__.call(null, state_7763);
+                      var result__6021__auto__ = switch__6018__auto__.call(null, state_7806);
                       if (cljs.core.keyword_identical_QMARK_.call(null, result__6021__auto__, new cljs.core.Keyword(null, "recur", "recur", -437573268))) {
                         continue;
                       } else {
@@ -80781,21 +80778,21 @@ cheshire_cat.core.init = function cheshire_cat$core$init() {
                       }
                       break;
                     }
-                  } catch (e7767) {
-                    if (e7767 instanceof Object) {
-                      var ex__6022__auto__ = e7767;
-                      var statearr_7768_7770 = state_7763;
-                      statearr_7768_7770[5] = ex__6022__auto__;
-                      cljs.core.async.impl.ioc_helpers.process_exception.call(null, state_7763);
+                  } catch (e7809) {
+                    if (e7809 instanceof Object) {
+                      var ex__6022__auto__ = e7809;
+                      var statearr_7810_7812 = state_7806;
+                      statearr_7810_7812[5] = ex__6022__auto__;
+                      cljs.core.async.impl.ioc_helpers.process_exception.call(null, state_7806);
                       return new cljs.core.Keyword(null, "recur", "recur", -437573268);
                     } else {
-                      throw e7767;
+                      throw e7809;
                     }
                   }
                 }();
                 if (cljs.core.keyword_identical_QMARK_.call(null, ret_value__6020__auto__, new cljs.core.Keyword(null, "recur", "recur", -437573268))) {
-                  var G__7771 = state_7763;
-                  state_7763 = G__7771;
+                  var G__7813 = state_7806;
+                  state_7806 = G__7813;
                   continue;
                 } else {
                   return ret_value__6020__auto__;
@@ -80803,12 +80800,12 @@ cheshire_cat.core.init = function cheshire_cat$core$init() {
                 break;
               }
             };
-            cheshire_cat$core$init_$_state_machine__6019__auto__ = function(state_7763) {
+            cheshire_cat$core$init_$_state_machine__6019__auto__ = function(state_7806) {
               switch(arguments.length) {
                 case 0:
                   return cheshire_cat$core$init_$_state_machine__6019__auto____0.call(this);
                 case 1:
-                  return cheshire_cat$core$init_$_state_machine__6019__auto____1.call(this, state_7763);
+                  return cheshire_cat$core$init_$_state_machine__6019__auto____1.call(this, state_7806);
               }
               throw new Error("Invalid arity: " + arguments.length);
             };
@@ -80819,9 +80816,9 @@ cheshire_cat.core.init = function cheshire_cat$core$init() {
         }(switch__6018__auto__, c__6069__auto__);
       }();
       var state__6071__auto__ = function() {
-        var statearr_7769 = f__6070__auto__.call(null);
-        statearr_7769[6] = c__6069__auto__;
-        return statearr_7769;
+        var statearr_7811 = f__6070__auto__.call(null);
+        statearr_7811[6] = c__6069__auto__;
+        return statearr_7811;
       }();
       return cljs.core.async.impl.ioc_helpers.run_state_machine_wrapped.call(null, state__6071__auto__);
     };
