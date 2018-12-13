@@ -17,8 +17,12 @@
     ;; This works but downloads a file likely because the body is a string
     ;;(rr/response (slurp "resources/public/cats.json")))
 
-    ;; This works but I want to get the key as a proper key instead of a string
-    (rr/response (cjson/read-str (slurp "resources/public/cats.json"))))
+    ;; This works but ideally I want to get the key as a proper key instead of a string
+    ;;(rr/response (cjson/read-str (slurp "resources/public/cats.json")))
+
+    ;; Introducing an atom
+    (def catAtom (atom {:name "Cheshire Cat" :status "Grinning"}))
+    (rr/response @catAtom))
   (route/not-found "Not Found"))
 
 (def app
